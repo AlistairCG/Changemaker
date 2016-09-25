@@ -3,8 +3,8 @@ This program will act like a simple cash register. You input X items in, tax the
 
 Notably, the program will output the most efficient cash denominations for the user as change(if any).
 
-#TO DO:
-Currently the program is very structured; I want to change this to Object oriented shortly along with a large expansion of cababilities.
+#TO DO(See Issues):
+Currently the program is very structured; I want to change this to Object oriented shortly along with a large expansion of capabilities.
 Over time, I would like this program to act as both the register and the database for items(inc checking for stock and restocking).
 
 0) Make a menu to start the program.
