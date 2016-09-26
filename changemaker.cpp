@@ -1,7 +1,9 @@
 #include <iostream>
 #include "change.h"
+#include "menu.h"
 
 using namespace std;
+
 //Alistair Godwin
 //Sep 25th 2016
 //Changemaker App
@@ -16,20 +18,18 @@ using namespace std;
 //Version 0.1 Prototype.
 int main() {
 
-	
+	int input = 0;
 	cout << "Change Maker  v0.1 \n";
 	cout << "================\n";
-	cout << "Please enter an items cost";
-	change_n::additems();
-	cout << "\n\n\n==========================================================";
-	cout << "Program will now exit, good bye!";
+	input = menu_n::menu();
+	while (input != 1 && input != 0) {
+		cout << "**Sorry this selection is not yet available!**\n";
+		input = menu_n::menu();
+	}
+	if(input == 1) change_n::additems();
 
 
-
-
-
-
-
-
+	system("Pause");
+	return 0;
 
 }

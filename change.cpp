@@ -14,7 +14,7 @@ void change_n::additems()
 	double itemcost = 0.00;
 	cout << "\nHow many items?\n";
 	cin >> items;
-
+	cin.ignore(100, '\n');
 	//===========Validation=================//
 	while ( items <= 0 || cin.fail() ) {
 		cout << "Enter an positive int. Try Again: How many items?\n";
@@ -40,11 +40,11 @@ void change_n::additems()
 double change_n::getmoney(double items)
 {
 	double input = 0.00;
-	cout << "\n\n TOTAL IS: $";
+	cout << "\n\nTOTAL: $";
 
 	items *= 1.13;
 	cout << setprecision(3)<< items;
-	cout << "Cash Given: $";
+	cout << "\nCash Given: $";
 	//=========Validation============//
 	do {
 
@@ -88,17 +88,17 @@ void change_n::makechange(double cost)
 	//TODO use enums on this!
 
 	//===========Output==========//
-	cout << "Please give Customer the following: ";
-	if (hund > 0) cout <<"$100: " << hund;
-	if (fift > 0) cout << "$50: " << fift;
-	if (twen > 0) cout << "$20: " << twen;
-	if (ten > 0) cout <<  "$10: " << ten;
-	if (five > 0) cout << "$5: " << five;
-	if (C_two > 0) cout << "$2: " << C_two;
-	if (C_one > 0) cout << "$1: " << C_one;
-	if (C_twfv > 0) cout << "$0.25: " << C_twfv;
-	if (C_dime > 0) cout << "$0.10: " << C_dime;
-	if (C_nick > 0) cout << "$0.05: " << C_nick;
+	cout << "Please give Customer the following: \n=========================\n";
+	if (hund > 0) cout <<"$100: " << hund << endl;
+	if (fift > 0) cout << "$50: " << fift << endl;
+	if (twen > 0) cout << "$20: " << twen << endl;
+	if (ten > 0) cout <<  "$10: " << ten << endl;
+	if (five > 0) cout << "$5: " << five << endl;
+	if (C_two > 0) cout << "$2: " << C_two << endl;
+	if (C_one > 0) cout << "$1: " << C_one << endl;
+	if (C_twfv > 0) cout << "$0.25: " << C_twfv << endl;
+	if (C_dime > 0) cout << "$0.10: " << C_dime << endl;
+	if (C_nick > 0) cout << "$0.05: " << C_nick << endl;
 	//=============================//
 
 
