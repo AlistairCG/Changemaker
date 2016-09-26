@@ -1,7 +1,12 @@
-# Changemaker Version 0.1
+# Changemaker Version 0.2
 This program will act like a simple cash register. You input X items in, tax them, get cash from the user, and finally make change.
 
 Notably, the program will output the most efficient cash denominations for the user as change(if any).
+
+#New in Version 0.2
+Added a menu function.
+Fixed some awful looking typos and formatted.
+Added Validation to several inputs.
 
 #TO DO(See Issues):
 Currently the program is very structured; I want to change this to Object oriented shortly along with a large expansion of capabilities.
